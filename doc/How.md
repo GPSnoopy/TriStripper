@@ -20,13 +20,17 @@ To begin with, Tri Stripper is given a sequence of indices. Using only these ind
 
 The first step, using the indices, is to build a structure that allows the stripper to have a good representation of the triangles. For a given triangle it should be possible to quickly find out what are the other triangles that could possibly make a strip with it. For that purpose a graph will be used.
 
+<figure>
 <img align="center" src="bunch_tri.png">
-<center>Figure 1: a bunch of raw triangles</center>
+<figcaption>Figure 1: a bunch of raw triangles</figcaption>
+</figure>
 
 Suppose we have a bunch of triangles (see Figure 1). We can see that triangle A shares an edge with C, B with C, C with B and D, D with C and E, E with D, and F with none. We can also see that A, B, C, D and F are in anticlockwise order while E is in clockwise order. All these information will be summarized in the graph we want to build (see Figure 2).
 
-
-Figure 2: the graph representing those triangles
+<figure>
+<img align="center" src="tri_graph.png">
+<figcaption>Figure 2: the graph representing those triangles</figcaption>
+</figure>
 
 This graph tells us what triangle goes with what triangle. Notice that triangle E is connected to nothing because it's been specified in clockwise order while all other triangles were given in anticlockwise order, this means it cannot be part of a triangle strip with these other triangles. F is obviously alone too.
 
@@ -48,8 +52,10 @@ A triangle strip will be thus characterized by 3 elements: its starter triangle,
 
 To build a strip, given these three elements, the algorithm described by the following pseudo-code can be used (see Figure 3).
 
-
-Figure 3: the routine used to build a strip
+<figure>
+<img align="center" src="buildstrip.png">
+<figcaption>Figure 3: the routine used to build a strip</figcaption>
+</figure>
 
 This algorithm is pretty straight forward. It takes the first triangle of the strip, using the graph it looks for a suitable triangle to extend the strip, when it finds it the algorithm loops again and repeats the operation untill the size of the strip has been hit.
 
@@ -73,7 +79,6 @@ To apply the "loneliest triangle first" policy, and keep track of all the connec
 
 The "loneliest triangle first" policy is used to avoid leaving lonely triangles unstripped. The stripper could have used the "longest strip of all" policy, but the idea is to strip a maximum of triangles and not to make the fewest number of strips. As the following table shows, extending a strip too much is nearly useless as we can't go beyond the theorical limit of 3 for the efficiency factor (Nb indices unstripped / Nb indices stripped); but lonely triangles are a waste.
 
-<center>
 | Nb of triangles | Nb of indices | Nb of indices (stripped) | Efficiency factor |
 | :---: | :---: | :---: | :---: |
 |1|3|3|1.0|
@@ -86,7 +91,6 @@ The "loneliest triangle first" policy is used to avoid leaving lonely triangles 
 |8|24|10|2.4|
 |9|27|11|2.4|
 |10|30|12|2.5|
-</center>
 
 Thus a lot of small strips with a few lonely triangles will give a better average efficiency factor than a few big long strips with a lot more lonely triangles.
 
