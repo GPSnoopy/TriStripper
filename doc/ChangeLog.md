@@ -1,10 +1,10 @@
 # Tri Stripper Change Log
 
-## UPDATE 26/05/2019
+## 26/05/2019
 
 GitHub import. Move to CMake. Removed a few obsolete classes. Misc cleanup.
 
-## UPDATE 09/06/2005
+## 09/06/2005
 
 Released Tri Stripper 1.10 Beta 5.
 This release fixes a supposedly was-fixed-in-beta-4 bug.
@@ -13,7 +13,7 @@ This release fixes a supposedly was-fixed-in-beta-4 bug.
 - [test program] Added a more compatible and less buggy stdint.h.
 - [test program] Now compiles and work on Linux AMD64 (fixed a small problem with 32 bits versus 64 bits indices).
 
-## UPDATE 16/02/2005
+## 16/02/2005
 
 Released Tri Stripper 1.10 Beta 4.
 This release fixes two bugs have been lurking there since 1.0. Thanks to Grisha Spivak for reporting them.
@@ -21,14 +21,14 @@ This release fixes two bugs have been lurking there since 1.0. Thanks to Grisha 
 - [tri_stripper] Fixed a silent out-of-range error in heap_array::erase(), that would happen when the element to be erased is located at the end of the heap. (Fixed in 1.10 Beta 3)
 - [tri_stripper] Fixed a silent out-of-range error in heap_array::pop(), that would arise when the last element in the heap was popped.
 
-## UPDATE 09/01/2005
+## 09/01/2005
 
 Released Tri Stripper 1.10 Beta 2.
 
 - [tri_stripper] Added SetPushCacheHits() to match the cache model used by newer GPUs. To quote Jason Hughes who emailed me about this limitation: "The FIFO on an NV25 and more recent check the FIFO for an index's presence before pushing/popping onto the queue". By default, the stripifier still uses the old behavior.
 - [tri_stripper] Added a protection against min/max macros. This will generate a readable error message, but it's up to you to resolve the issue. Thanks to Patrik Müller for reporting this.
 
-## UPDATE 14/11/2004
+## 14/11/2004
 
 Added a Tri Stripper 1.01 "configure/make/install" package for UNIX-like systems.
 
@@ -45,17 +45,17 @@ Here is a non-exhaustive list of the major changes:
 - [test program] Should be portable enough to run on big-endian platforms now, but I haven't got the chance to test it.
 - [all] Replaced all the #pragma once with regular C header guards.
 
-## UPDATE 11/07/2004
+## 11/07/2004
 
 In the test program: removed the "press enter to continue", as well as some exit code, which were causing problems with GLUT.
 Website: removed all older versions from the website, except 1.0 Beta 5 source files.
 
 
-## UPDATE 10/11/2003
+## 10/11/2003
 
 Released Tri Stripper 1.01 Final. Improved template code of graph_array.h (implicit typename fixed).
 
-## UPDATE 23/04/2003 *
+## 23/04/2003 *
 
 Released Tri Stripper 1.00 Final. It doesn't bring any new features nor does fix any bugs. But it changes a few thing in the architecture of the code to make it cleaner and more portable. Also it was tested with Visual C++ .NET 2003 and GCC 3.2; both compile the same code so there is no need for those "patches" anymore. But this move comes at the cost of letting down older compilers. If you have troubles compiling this new version, you can always try the old 1.00 Beta 5:
 
@@ -64,7 +64,7 @@ Released Tri Stripper 1.00 Final. It doesn't bring any new features nor does fix
 - Linux x86-32 Patch (makefile for GCC 3.2)
 - Windows (VC++ 6.0) Patch
 
-## UPDATE 10/12/2002
+## 10/12/2002
 
 Released Tri Stripper 1.00 BETA 5. It fixes a bug that could cause it to go into an infinite loop in some cases. For example when sending some degenerated triangles in the right order, or when using a CacheSize = 2 with MinStripSize = 2. (Thanks to Remy for his helpful bug report)
 
@@ -72,7 +72,7 @@ It also contains a newer version of "graph_array.h". The changes and the bug fix
 
 Also included "stdafx.h" in the separated source "tri_stripper_100B5.zip", this should make the integration of Tri Stripper easier in some projects (read: "projects that don't already contain "stdafx.h" with the right headers" (read: "projects that aren't made under Visual Studio")). ;-)
 
-## UPDATE 18/11/2002
+## 18/11/2002
 
 Released Tri Stripper 1.00 BETA 4. This new version fixes a bug that could cause it to crash (thanks to Nicolas for finding it).
 
@@ -82,7 +82,7 @@ Because of this modification in the interface, some applications using Tri Strip
 
 If you don't want to break your application because of this modification of interface but still want the previously stated bug fixed you can download Tri Stripper 1.00 BETA 3; but future versions will use this new interface.
 
-## UPDATE 16/11/2002
+## 16/11/2002
 
 Released Tri Stripper 1.00 BETA 2. No bug fix, just an improved portability with compilers that aren't 100% compliant to the C++ standard.
 
