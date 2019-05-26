@@ -1,20 +1,18 @@
 
 #include "stdafx.h"
-
 #include "gl_renderer.h"
-#include "static_assert.h"
 
 
 
-int main(int argc, char * argv[])
+int main(int argc, char* argv[])
 {
 	// Launch OpenGL Renderer and run the predefined scene
 	try {
-		gl_renderer();
+		gl_renderer(argc, argv);
 	}
 
 	// Global error handling
-	catch (std::bad_alloc) {
+	catch (const std::bad_alloc&) {
 		std::cerr << "!!! Fatal Error !!! Not enough memory!\n" << std::endl;
 	}
 

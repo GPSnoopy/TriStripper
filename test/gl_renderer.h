@@ -13,7 +13,7 @@ class high_res_timer;
 class gl_renderer
 {
 public:
-	gl_renderer();
+	gl_renderer(int argc, char* argv[]);
 	~gl_renderer();
 
 	static enum model {
