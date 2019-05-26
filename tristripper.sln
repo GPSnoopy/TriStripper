@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtristripper", "lib\libtristripper.vcproj", "{DFC8E3D2-BAD2-4266-9135-D8289B383E4D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcproj", "{B6433982-3CB0-449C-8798-028E9139837A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DFC8E3D2-BAD2-4266-9135-D8289B383E4D} = {DFC8E3D2-BAD2-4266-9135-D8289B383E4D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{DFC8E3D2-BAD2-4266-9135-D8289B383E4D}.Debug.ActiveCfg = Debug|Win32
+		{DFC8E3D2-BAD2-4266-9135-D8289B383E4D}.Debug.Build.0 = Debug|Win32
+		{DFC8E3D2-BAD2-4266-9135-D8289B383E4D}.Release.ActiveCfg = Release|Win32
+		{DFC8E3D2-BAD2-4266-9135-D8289B383E4D}.Release.Build.0 = Release|Win32
+		{B6433982-3CB0-449C-8798-028E9139837A}.Debug.ActiveCfg = Debug|Win32
+		{B6433982-3CB0-449C-8798-028E9139837A}.Debug.Build.0 = Debug|Win32
+		{B6433982-3CB0-449C-8798-028E9139837A}.Release.ActiveCfg = Release|Win32
+		{B6433982-3CB0-449C-8798-028E9139837A}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
