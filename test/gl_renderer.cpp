@@ -246,7 +246,7 @@ void gl_renderer::InitScene()
 
 bool gl_renderer::LoadTestModel()
 {
-	const char ModelPath[] = "models/skull.vxo";/*"models/starship.vxo";*/
+	const char ModelPath[] = "../models/skull.vxo";/*"../models/starship.vxo";*/
 
 	std::ifstream File(ModelPath, std::ios::binary);
 
