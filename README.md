@@ -1,4 +1,4 @@
-# TriStripper
+# Tri Stripper
 
 ## Introduction
 
@@ -8,12 +8,10 @@ Drawing 3D models using triangle strips has always been more efficient than just
 
 It should also be noted that some of the algorithms and structures used by Tri Stripper can serve other purposes in other domains; for example, computing object silhouette when using "stencil" shadows.
 
-## Change Log
-
 [See full change log.](doc/ChangeLog.md)
 
 ## Design
 
-- [How does Tri Stripper work.](doc/ChangeLog.md)
+- [How does Tri Stripper work.](doc/How.md)
 - [Comparison between Tri Stripper and NVIDIA's NVTriStrip.](doc/ChangeLog.md)
 - [How to use Tri Stripper and explanation of the test program.](doc/ChangeLog.md)
