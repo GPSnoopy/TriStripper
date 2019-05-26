@@ -2,7 +2,6 @@
 set(exe_name TriStripper.Test)
 
 set(src_files
-	base_exception.h
 	fileio.h
 	gl_mesh.cpp
 	gl_mesh.h
@@ -13,7 +12,6 @@ set(src_files
 	high_res_timer.cpp
 	high_res_timer.h
 	main.cpp
-	stdafx.h
 	varrays_normalizer.cpp
 	varrays_normalizer.h
 )

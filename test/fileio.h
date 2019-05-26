@@ -45,6 +45,9 @@
 #ifndef HEADER_GUARD_FILEIO_H
 #define HEADER_GUARD_FILEIO_H
 
+#include <cassert>
+#include <iostream>
+
 #if defined WIN32
 #include <io.h> // Windows I/O facilities (Directories)
 #elif defined UNIX

@@ -2,6 +2,8 @@
 #ifndef HEADER_GUARD_GL_RENDERER_H
 #define HEADER_GUARD_GL_RENDERER_H
 
+#include <ostream>
+
 
 
 class gl_model;

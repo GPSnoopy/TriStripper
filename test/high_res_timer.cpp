@@ -1,5 +1,4 @@
 
-#include "stdafx.h"
 #include "high_res_timer.h"
 
 #if defined (WIN32)

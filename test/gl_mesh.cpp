@@ -1,7 +1,5 @@
 
-#include "stdafx.h"
 #include "gl_mesh.h"
-
 #include "fileio.h"
 #include "varrays_normalizer.h"
 #include "tri_stripper.h"
@@ -17,7 +15,7 @@
 
 
 size_t gl_mesh::s_CacheSize = 10;
-bool gl_mesh::s_ViewStrips = false;
+bool gl_mesh::s_ViewStrips = true;
 
 
 

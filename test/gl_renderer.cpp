@@ -1,9 +1,11 @@
 
-#include "stdafx.h"
 #include "gl_renderer.h"
-
 #include "gl_model.h"
 #include "high_res_timer.h"
+#include <fstream>
+#include <iostream>
+
+//#define STARSHIP_MODEL
 
 
 
@@ -31,7 +33,7 @@ gl_renderer::gl_renderer(int argc, char* argv[])
 
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
-	glutInitWindowSize(320, 240);
+	glutInitWindowSize(1024, 768);
 	glutInitWindowPosition(100, 50);
 	glutCreateWindow("Triangle Stripper Test");
 
@@ -77,8 +79,10 @@ void gl_renderer::Display()
 	glRotatef((m_Timer.ElapsedTime<float>() * 1000.0 / 20.0), 0.0, 1.0, 0.0);
 //	glRotatef(145.0, 0.0, 1.0, 0.0);
 
-//	glRotatef(-45.0, 1.0, 0.0, 0.0);	// Starship model test
-//	glScalef(0.05, 0.05, 0.05);			// Starship model test
+#ifdef STARSHIP_MODEL
+	glRotatef(-45.0, 1.0, 0.0, 0.0);	// Starship model test
+	glScalef(0.05, 0.05, 0.05);			// Starship model test
+#endif
 
 	m_TestModel.ExecuteAllMeshes();
 
@@ -246,7 +250,12 @@ void gl_renderer::InitScene()
 
 bool gl_renderer::LoadTestModel()
 {
-	const char ModelPath[] = "../models/skull.vxo";/*"../models/starship.vxo";*/
+	const char ModelPath[] =
+#ifdef STARSHIP_MODEL
+		"../models/starship.vxo";
+#else
+		"../models/skull.vxo";
+#endif
 
 	std::ifstream File(ModelPath, std::ios::binary);
 

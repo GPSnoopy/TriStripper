@@ -1,5 +1,4 @@
 
-#include "stdafx.h"
 #include "gl_model.h"
 
 #include "fileio.h"

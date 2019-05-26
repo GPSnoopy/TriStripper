@@ -2,6 +2,9 @@
 #ifndef HEADER_GUARD_GL_MESH_H
 #define HEADER_GUARD_GL_MESH_H
 
+#include <GL/glut.h>
+#include <string>
+#include <vector>
 
 
 // 3D Mesh class

@@ -1,6 +1,7 @@
 
-#include "stdafx.h"
 #include "gl_renderer.h"
+#include <iostream>
+#include <stdexcept>
 
 
 

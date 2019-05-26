@@ -33,19 +33,18 @@
 #ifndef HEADER_GUARD_HIGH_RES_TIMER_H
 #define HEADER_GUARD_HIGH_RES_TIMER_H
 
+#include <stdexcept>
+
 
 
 class high_res_timer
 {
 public:
 
-	class timer_error : public base_exception 
+	class timer_error : public std::runtime_error 
 	{
 	public:
-		timer_error() { }
-		explicit timer_error(const std::string ErrorMsg) : base_exception(ErrorMsg) { }
-
-		virtual std::string what() const { return std::string("high_res_timer: ") + base_exception::what(); }
+		explicit timer_error(const std::string ErrorMsg) : runtime_error("high_res_timer: " + ErrorMsg) { }
 	};
 
 
