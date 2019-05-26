@@ -4,8 +4,6 @@
 // see copyright notice in tri_stripper.h
 //
 //////////////////////////////////////////////////////////////////////
-// SVN: $Id: public_types.h 86 2005-06-08 17:47:27Z gpsnoopy $
-//////////////////////////////////////////////////////////////////////
 
 #ifndef TRI_STRIPPER_HEADER_GUARD_PUBLIC_TYPES_H
 #define TRI_STRIPPER_HEADER_GUARD_PUBLIC_TYPES_H

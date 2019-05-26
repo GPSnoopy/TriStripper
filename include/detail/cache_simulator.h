@@ -4,8 +4,6 @@
 // see copyright notice in tri_stripper.h
 //
 //////////////////////////////////////////////////////////////////////
-// SVN: $Id: cache_simulator.h 86 2005-06-08 17:47:27Z gpsnoopy $
-//////////////////////////////////////////////////////////////////////
 
 #ifndef TRI_STRIPPER_HEADER_GUARD_CACHE_SIMULATOR_H
 #define TRI_STRIPPER_HEADER_GUARD_CACHE_SIMULATOR_H
