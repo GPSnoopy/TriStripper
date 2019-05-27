@@ -39,15 +39,15 @@ For each test, the compilation time (time taken by the stripper) was given as we
 
 ### Skull Test Results (1 mesh; 60,339 triangles)
 
-| | Original Model | Stripped, No Cache | Stripped, CacheSize = 22 | Stripped, CacheSize = 16 | Stripped, CacheSize = 10 |
+| | Original Model | No Cache | CacheSize = 22 | CacheSize = 16 | CacheSize = 10 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Tri Stripper** | 0 ms / 43.3 fps (100%) | 1240 ms / 100.6 fps (232%) | N/A | 1860 ms / 121.0 fps (279%) | 1710 ms / 123.6 fps (285%) |
 | **NvTriStrip** | 0 ms / 43.3 fps (100%) | N/A | 184325 ms / 121.0 fps (279%) | 184855 ms / 130.7 fps (302%) | 259200 ms / 116.5 fps (269%) |
 
 ### Skull Test Strip Details(1 mesh; 60,339 triangles)
 
-| | Original Model | Stripped, No Cache | Stripped, CacheSize = 22 | Stripped, CacheSize = 16 | Stripped, CacheSize = 10 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| | No Cache | CacheSize = 22 | CacheSize = 16 | CacheSize = 10 |
+| :--- | :--- | :--- | :--- | :--- |
 | **Tri Stripper** | - number of triangles: 60339<br>- generated 8647 triangle strips.<br>- stripped 59529 triangles.<br>- left 810 triangles alone.<br>- created 8648 primitive groups. | | - number of triangles: 60339.<br>- generated 8969 triangle strips.<br>- stripped 59125 triangles.<br>- left 1214 triangles alone.<br>- created 8970 primitive groups. | - number of triangles: 60339.<br>- generated 11065 triangle strips.<br>- stripped 58996 triangles.<br>- left 1343 triangles alone.<br>- created 11066 primitive groups. |
 | **NvTriStrip** | - number of triangles: 60339.<br>- generated 5586 triangle strips.<br>- stripped 70284 triangles.<br>- left 958 triangles alone.<br>- created 5587 primitive groups. | - number of triangles: 60339.<br>- generated 7285 triangle strips.<br>- stripped 70945 triangles.<br>- left 958 triangles alone.<br>- created 7286 primitive groups. | - number of triangles: 60339.<br>- generated 14406 triangle strips.<br>- stripped 73466 triangles.<br>- left 958 triangles alone.<br>- created 14407 primitive groups. |
 
@@ -85,8 +85,8 @@ To end this comparison, let's make a quick bunch of tests with a "triangle strip
 
 ### Starship Test (26 meshes; 27,574 triangles)
 
-| | Original Model | Stripped, No Cache | Stripped, CacheSize = 22 | Stripped, CacheSize = 16 | Stripped, CacheSize = 10 |
-| :--- | :---: | :---: | :---: | :---: | :---: |
+| | Original Model | No Cache | CacheSize = 16 | CacheSize = 10 |
+| :--- | :---: | :---: | :---: | :---: |
 | **Tri Stripper** | 0 ms / 133.5 fps (100%) | 440 ms / 148.5 fps (111%) | N/A | 530 ms / 159.5 fps (120%) |
 | **NvTriStrip** | 0 ms / 133.5 fps (100%) | N/A | 16060 ms / 162.1 fps (121%) | N/A |
 
