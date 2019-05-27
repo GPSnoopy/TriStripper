@@ -42,8 +42,9 @@ Normalizing the vertex arrays is crucial for the triangle stripper, because it o
 
 Tri Stripper is defined by the class "tri_stripper". The public interface of this class is shown by Figure 1.
 
-![Interface](tri_stripper.png)<br>
-**Figure 1: class tri_stripper public interface (1.00 BETA 1)**
+| ![Interface](tri_stripper.png) |
+| :---: |
+| **Figure 1: class tri_stripper public interface (1.00 BETA 1)** |
 
 When creating a tri_stripper object, the triangle indices must be given to it. This is done using the two defined types: index and indices. Two important rules must be followed there:
 
