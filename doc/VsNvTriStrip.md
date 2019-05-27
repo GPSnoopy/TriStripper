@@ -67,14 +67,17 @@ From this first test we can already tell and conclude a a lot of things:
 
 - But on the other hand, NvTriStrip adds degenerated triangle strips to make its task easier. When looking at the details of the stripper, you'll see it gives back more stripped triangles than what it was given. Tri Stripper won't do this, as it goes against one of its most important rules: the triangle stripper should not modify the geometry it was given. Most of the time these added degenerated triangles are not a problem, but sometimes they can; it's particularly obvious when viewing the resulting 3D model in wireframe.
 
-![Skull test](skull_normal.png)<br>
-**Figure 1: The skull test**
+| ![Skull test](skull_normal.png) |
+| :---: |
+| **Figure 1: The skull test** |
 
-![Skull test](skull_NvTriStrip_c22.png)<br>
-**Figure 2: The skull test, strips visualization: NvTriStrip (CacheSize = 22, Effective CacheSize = 16)**
+| ![Skull test](skull_NvTriStrip_c22.png) |
+| :---: |
+| **Figure 2: The skull test, strips visualization: NvTriStrip (CacheSize = 22, Effective CacheSize = 16)** |
 
-![Skull test](skull_TriStripper_c16.png)<br>
-**Figure 3: The skull test, strips visualization: Tri Stripper (CacheSize = 16)**
+| ![Skull test](skull_TriStripper_c16.png) |
+| :---: |
+| **Figure 3: The skull test, strips visualization: Tri Stripper (CacheSize = 16)** |
 
 To end this comparison, let's make a quick bunch of tests with a "triangle strips unfriendly" 3D model.
 
