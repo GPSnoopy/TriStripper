@@ -12,4 +12,4 @@ It should also be noted that some of the algorithms and structures used by Tri S
 
 - [How does Tri Stripper work.](doc/How.md)
 - [Comparison between Tri Stripper and NVIDIA's NVTriStrip.](doc/VsNvTriStrip.md)
-- [How to use Tri Stripper and explanation of the test program.](doc/ChangeLog.md)
+- [How to use Tri Stripper and explanation of the test program.](doc/Manual.md)
